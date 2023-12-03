@@ -43,12 +43,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        // always {
-        //     // Limpeza: Remova o container se a construção ou execução falhar
-        //     sh 'docker stop epic-chat-backend || true'
-        //     sh 'docker rm epic-chat-backend || true'
-        // }
-    }
 }
