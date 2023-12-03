@@ -6,6 +6,6 @@ export class MainController {
 
   @Get()
   getHello(): string {
-    return 'AppBackesnd running ... porra';
+    return 'AppBackesnd running ... só mais um teste';
   }
 }

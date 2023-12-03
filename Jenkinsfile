@@ -33,11 +33,9 @@ pipeline {
         stage('Run Application') {
             steps {
                 script {
-                    // Certifique-se de parar e remover um container anterior, se existir
                     sh 'docker stop epic-chat-backend || true'
                     sh 'docker rm epic-chat-backend || true'
 
-                    // Execute a aplicação no novo container
                     sh "docker run -d --name=epic-chat-backend -p 3000:3000 $DOCKER_IMAGE"
                 }
             }
