@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        // Use um agente com Node.js e npm pré-instalados
+        docker {
+            image 'node:18'
+        }
+    }
 
     environment {
         DOCKER_IMAGE = 'epic-chat/app-backend:latest'
