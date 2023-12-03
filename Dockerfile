@@ -10,7 +10,6 @@ COPY yarn.lock ./
 # Install app dependencies
 RUN yarn
 
-# Bundle app source
 COPY . .
 
 # Creates a "dist" folder with the production build
