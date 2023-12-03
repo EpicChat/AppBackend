@@ -11,5 +11,5 @@ pipeline {
                 sh 'yarn && yarn build && yarn start:prod' 
             }
         }
-    }
+    } 
 }
