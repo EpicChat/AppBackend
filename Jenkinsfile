@@ -22,7 +22,7 @@ pipeline {
         }
 
         stage('Docker Build') {
-            steps {
+            steps { 
                 script {
                     sh "docker build -t $DOCKER_IMAGE ."
                 }
