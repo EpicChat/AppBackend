@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
+                echo 'checkouting...'
                 checkout scm
             }
         }
