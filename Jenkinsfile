@@ -15,7 +15,7 @@ pipeline {
 
         stage('Build') {
             steps {
-                  nodejs(nodeJSInstallationName: 'Node 18.x', configId: '<config-file-provider-id>') {
+                  nodejs(nodeJSInstallationName: 'NodeJs 18', configId: '<config-file-provider-id>') {
                     sh 'npm install'
                     sh 'npm run build'
                   }
