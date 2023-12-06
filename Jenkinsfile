@@ -36,7 +36,7 @@ pipeline {
                     sh 'docker stop epic-chat-backend || true'
                     sh 'docker rm epic-chat-backend || true'
 
-                    sh "docker run -d --name=epic-chat-backend -p 3000:3000 $DOCKER_IMAGE"
+                    sh "docker run -d --name=epic-chat-backend -p 3002:3002 --hostname=app-backend --network=global_network $DOCKER_IMAGE"
                 }
             }
         }
