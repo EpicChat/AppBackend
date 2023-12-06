@@ -13,11 +13,12 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Build and Test') {
             steps {
                   nodejs(nodeJSInstallationName: 'NodeJs 18') {
                     sh 'npm install'
                     sh 'npm run build'
+                    sh 'npm run test'
                   }
             }
         }
