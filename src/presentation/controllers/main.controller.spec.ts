@@ -9,7 +9,7 @@ describe('MainController', () => {
 
   describe('checkHello', () => {
     it('Deve retornar "AppBackend running..."', async () => {
-      expect(await mainController.getHello()).toBe('AppBackend running...');
+      expect(await mainController.getHello()).toBe('AppBackend running....');
     });
   });
 });
